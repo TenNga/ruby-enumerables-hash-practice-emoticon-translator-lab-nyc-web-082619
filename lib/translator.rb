@@ -23,3 +23,7 @@ end
 
 
 # code => { angel: ["O:)", "☜(⌒▽⌒)☞"],angry: [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],bored: [":O", "(ΘεΘ;)"] }
+
+# code => {
+  "get_meaning": { "☜(⌒▽⌒)☞": angel
+}
