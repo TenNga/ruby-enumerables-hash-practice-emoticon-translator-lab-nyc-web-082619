@@ -5,11 +5,6 @@ def load_library(file)
   code = YAML.load_file(file)
   code["get_meaning"] = {}
   code["get_emoticon"] = {}
-  
-  code.each do |meaning, emoticon|
-    
-  end
-  
   code
 end
 
@@ -22,8 +17,9 @@ def get_english_meaning
 end
 
 
-# code => { angel: ["O:)", "☜(⌒▽⌒)☞"],angry: [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],bored: [":O", "(ΘεΘ;)"] }
+# code => { angel: ["O:)", "☜(⌒▽⌒)☞"],  angry: [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],bored: [":O", "(ΘεΘ;)"] }
 
 # code => {
-  "get_meaning": { "☜(⌒▽⌒)☞": angel
-}
+#  :get_meaning => { "☜(⌒▽⌒)☞"=> "angel" ..... },
+# :get_emoticon => { "O:)" => "☜(⌒▽⌒)☞" ......}
+# }
