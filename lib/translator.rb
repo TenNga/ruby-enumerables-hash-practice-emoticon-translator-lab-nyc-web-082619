@@ -21,8 +21,13 @@ def get_japanese_emoticon(yamlFile, emoticon)
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(yamlFile, emoticon)
+  result = load_library(yamlFile)
+  if result["get_meaning"].has_key?(emoticon)
+    result["get_meaning"][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 end
 
 
