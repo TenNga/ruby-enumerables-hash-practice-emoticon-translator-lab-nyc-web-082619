@@ -7,6 +7,7 @@ def load_library(file)
   result["get_emoticon"] = {}
   code.each do |meaning, emoticons|
     result["get_meaning"][emoticons[1]] = meaning
+    result["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   result
 end
