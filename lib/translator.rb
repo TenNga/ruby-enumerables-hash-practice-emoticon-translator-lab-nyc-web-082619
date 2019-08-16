@@ -3,9 +3,9 @@ require "yaml"
 def load_library(file)
   result = {}
   code = YAML.load_file(file)
-  code["get_meaning"] = {}
-  code["get_emoticon"] = {}
-  code
+  result["get_meaning"] = {}
+  result["get_emoticon"] = {}
+  result
 end
 
 def get_japanese_emoticon
