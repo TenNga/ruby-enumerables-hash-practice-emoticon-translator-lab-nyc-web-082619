@@ -5,6 +5,9 @@ def load_library(file)
   code = YAML.load_file(file)
   result["get_meaning"] = {}
   result["get_emoticon"] = {}
+  code.each do |meaning, emoticons|
+    result["get_meaning"][emoticons[1]] = meaning
+  end
   result
 end
 
