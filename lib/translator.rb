@@ -17,7 +17,7 @@ def get_japanese_emoticon(yamlFile, emoticon)
   if result["get_emoticon"].has_key?(emoticon)
     result["get_emoticon"][emoticon]
   else 
-    return "Sorry emoticon not recognized!"
+    return "Sorry, that emoticon was not found"
   end
 end
 
